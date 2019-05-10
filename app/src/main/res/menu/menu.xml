@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/itemLogout"
+        android:icon="@drawable/ic_logout_black_24dp"
+        app:showAsAction="ifRoom"
+        android:title="Logout"/>
+    <item
+        android:id="@+id/itemShowList"
+        android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+        app:showAsAction="ifRoom"
+        android:title="Tasks"/>
+
+
+</menu>

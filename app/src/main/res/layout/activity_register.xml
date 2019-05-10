@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_margin="20dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="10dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/linearlayoutheading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/ronaklogo"
+                            android:src="@drawable/ic_auth_black_24dp"
+                            android:tint="@android:color/holo_red_dark" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center_horizontal"
+                            android:text="Register"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageview1forReectangle"
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:layout_below="@id/linearlayoutheading"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="-15dp"
+                        android:rotation="45"
+                        android:src="@drawable/square" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayoutForUsernameSection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/imageview1forReectangle"
+                        android:layout_margin="10dp"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/imageViewUSerIcon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/colorPrimary"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_person_black_24dp"
+                            android:tint="@android:color/white" />
+
+                        <EditText
+                            android:id="@+id/usernameXML"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="@+id/imageViewUSerIcon"
+                            android:layout_toRightOf="@+id/imageViewUSerIcon"
+                            android:hint="Username"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayoutForEmailSection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/relativeLayoutForUsernameSection"
+                        android:layout_margin="10dp"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/imageViewUSerEmail"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/colorPrimary"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_email_black_24dp"
+                            android:tint="@android:color/white" />
+
+                        <EditText
+                            android:id="@+id/emailXML"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="@+id/imageViewUSerEmail"
+                            android:layout_toRightOf="@+id/imageViewUSerEmail"
+                            android:hint="Email"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayoutForPasswordSection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/relativeLayoutForEmailSection"
+                        android:layout_margin="10dp"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/imageViewUSerPassword"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/colorPrimary"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_pass_key_black_24dp"
+                            android:tint="@android:color/white" />
+
+                        <EditText
+                            android:id="@+id/passwordXML"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="@+id/imageViewUSerPassword"
+                            android:layout_toRightOf="@+id/imageViewUSerPassword"
+                            android:hint="Password"
+                            android:inputType="numberPassword"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayoutForConfirmPasswordSection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/relativeLayoutForPasswordSection"
+                        android:layout_margin="10dp"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/imageViewUSerConfirmPassword"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/colorPrimary"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_pass_key_black_24dp"
+                            android:tint="@android:color/white" />
+
+                        <EditText
+                            android:id="@+id/conpasswordXML"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentBottom="@+id/imageViewUSerConfirmPassword"
+                            android:layout_toRightOf="@+id/imageViewUSerConfirmPassword"
+                            android:hint="Confirm Password"
+                            android:inputType="numberPassword"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+
+                    <Button
+                        android:id="@+id/signupButtonXML"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/relativeLayoutForConfirmPasswordSection"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/buttons_shape"
+                        android:text="Register"
+                        android:textColor="@color/textColor" />
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

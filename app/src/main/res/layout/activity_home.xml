@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    tools:context=".HomeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutForHomeContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/usernameXMLHOME"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Username : "
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutForEnteringAssignmentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/usernameXMLHOME"
+                android:layout_margin="10dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imageViewOfAssignment"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_assignment_icon_24dp"
+                    android:tint="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/assignmentNameXML"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="@+id/imageViewUSerConfirmPassword"
+                    android:layout_toRightOf="@+id/imageViewOfAssignment"
+                    android:hint="Enter Assignment Name"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutForAssignmentNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativeLayoutForEnteringAssignmentName"
+                android:layout_margin="10dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imageViewOfAssignmentNumber"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_assignment_number_black_24dp"
+                    android:tint="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/assignmentNumberXML"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="@+id/imageViewUSerConfirmPassword"
+                    android:layout_toRightOf="@+id/imageViewOfAssignmentNumber"
+                    android:hint="Enter Assignment Number"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutForEnterCourseNameOrCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativeLayoutForAssignmentNumber"
+                android:layout_margin="10dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imageViewOfCourse"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_course_24dp"
+                    android:tint="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/courseNameOrCodeXML"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="@+id/imageViewUSerConfirmPassword"
+                    android:layout_toRightOf="@+id/imageViewOfCourse"
+                    android:hint="Enter Course Name Or Code"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutTimeSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativeLayoutForEnterCourseNameOrCode"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/dateButtonXML"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttons_shape"
+                        android:padding="10dp"
+                        android:text="Select Due Date : "
+                        android:textAllCaps="false"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dateTextViewXML"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:text="Date:"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submitButtonXML"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutTimeSection"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttons_shape"
+                android:padding="10dp"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
